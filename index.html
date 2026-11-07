@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Jokenpô</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jokenpô do Jefferson</h1>
+        
+        <div class="placar">
+            <p>Jogador: <span id="pontos-jogador">0</span></p>
+            <p>Computador: <span id="pontos-computador">0</span></p>
+        </div>
+
+        <!-- Arena de Confronto Visual -->
+        <div class="arena">
+            <div class="quadro-confronto">
+                <span class="label-jogador">Você</span>
+                <div id="display-jogador" class="icone-escolha">❓</div>
+            </div>
+            <div class="vs">VS</div>
+            <div class="quadro-confronto">
+                <span class="label-jogador">Computador</span>
+                <div id="display-computador" class="icone-escolha">❓</div>
+            </div>
+        </div>
+
+        <div class="opcoes">
+            <button class="btn-opcao" onclick="jogar('pedra')">✊ Pedra</button>
+            <button class="btn-opcao" onclick="jogar('papel')">✋ Papel</button>
+            <button class="btn-opcao" onclick="jogar('tesoura')">✌️ Tesoura</button>
+        </div>
+
+        <div class="resultado-box">
+            <h2 id="mensagem-resultado">Escolhe uma opção para começar!</h2>
+        </div>
+
+        <button id="btn-reiniciar" onclick="reiniciarJogo()">Reiniciar Jogo</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

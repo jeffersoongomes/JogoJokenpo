@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url('fundo.jpg');
+    background-size: cover;          
+    background-position: center;     
+    background-repeat: no-repeat;    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 480px;
+    width: 100%;
+}
+
+h1 {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.placar {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: #e9ecef;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Quadros da Arena de Confronto */
+.arena {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+}
+
+.quadro-confronto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.label-jogador {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #6c757d;
+}
+
+.icone-escolha {
+    font-size: 3rem;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.vs {
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: #dc3545;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-opcao {
+    flex: 1;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-opcao:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.resultado-box {
+    margin-bottom: 20px;
+    min-height: 50px;
+}
+
+.animar-resultado {
+    animation: popIn 0.3s ease-in-out;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+#btn-reiniciar {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btn-reiniciar:hover {
+    background-color: #bd2130;
+}
